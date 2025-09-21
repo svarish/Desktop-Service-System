@@ -1,0 +1,269 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <link rel="icon" href="srmlogo.jpeg" type="image/gif" sizes="18x18">
+        <title>Registration Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      </head>
+      <style>
+  
+    .dropdown {
+     position: relative;
+     display: inline-block;
+      }
+
+      .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 12px 16px;
+     z-index: 1;
+    }
+
+        button { 
+          width: 30%;
+          background-color:crimson;
+
+          
+            
+    color:white; 
+            padding: 8px; 
+            margin: 2px 1px; 
+            border: none; 
+            cursor: pointer; 
+            align-items:centre;
+            } 
+      .ilg{
+        font-family: "DM Sans";
+        font-weight: 400;
+        
+      
+      
+      }
+
+      input[type=text], input[type=password] {
+      width: 30%;
+      padding: 15px;
+      margin: 2px 0 20px 0;
+      display: inline-block;
+      border: none;
+      background: #D3D3D3;
+    }
+
+      .p{
+            border-left: 6px solid red;
+          }
+
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2%;
+      overflow: hidden;
+      background-color: #333;
+      font-family: "Work Sans";
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color:crimson;
+    }
+
+    .active {
+      background-color:#111;
+    }
+
+    .container {
+          position:absolute;
+          padding:13px 200px;
+          top:50%;
+          left:50%;
+          margin-left: auto;
+          margin-right: auto;
+          transform:translate(-50%,-50%);
+          background: whitesmoke;
+      }
+      .cent{
+        align-content: center;
+        background-color: whitesmoke;
+     
+        
+      }
+      
+      .alg{
+          align-items: center;
+      }
+      #next {
+      left: 129px;
+      width: 43px;
+      background: url(user.png) ;
+      
+    }
+    textarea {
+  width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+
+    </style>
+    </head>
+    <body>
+
+    <ul>
+      <li><div class="p"><img src = srmlogo.jpeg width="55" height="50"></div></li>
+      <li style="float:left"><a class="active" href="#about">SRM VALLIAMMAI ENGINNERING COLLEGE </a>
+      </li>
+      <li style="float:right"><a href="#home"><i class='fas fa-user-circle' style='font-size:23px;color:white'></i></a></li>
+      <li style="float:right"><a href="reqq.php"><i class='fas fa-bell' style='font-size:23px;color:white'></i></a></li>
+      
+      <li style="float:right"><a href="logout.php">Log Out</a></li>
+      
+    </ul>
+      </style>
+      <body>
+
+              <div class="w3-card-4">
+                <div class="w3-container w3-light-green">
+                <div class="ilg">
+                <h1 style="align-items: center;"><div class="ilg">Registration Form</div></h1>
+              </div>
+            </div>
+            </div>
+          
+              <div class="cent">
+                <br>
+                <form action="connect.php" method="post" style="border:0px solid #ccc">
+
+                  <div class="alg">
+                    <div class="ilg"><label for="firstName"><b>Name(Complain Raised By):</b></label><br>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                      /><br></div>
+                    
+                  </div>
+                  <br>
+
+                  
+                  </div>
+                 <br>
+                  </div>
+                  <div class="ilg">
+                    <label for="number"><b>Phone Number:</b></label><br>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="number"
+                      name="number"
+                    />
+                  
+                  </div><br>
+                  <div class ="alg">
+                    <div class="ilg">
+                      <label for="Problems"><b>Choose a Issue:</b></label><br>
+                      <select name="Issue" id="Issue">
+                        <option value="Online Test-Server and Bandwidth">ServerSupport(Online Test-Server and Bandwidth)</option>
+                        <option value="Patch Management">ServerSupport(Patch Management)</option>
+                        <option value="Remote Access">ServerSupport(Remote Access)</option>
+                        <option value="Server Deployment">ServerSupport(Server Deployment)</option>
+                        <option value="Server Monitoring">ServerSupport(Server Monitoring)</option>
+                        <option value="Server Performance Issue">ServerSupport(Server Performance Issue)</option>
+                        <option value="Vendor Coordination">ServerSupport(Vendor Coordination)</option>
+                        <option value="DNS">ServerSupport(DNS)</option>
+                        <option value="G Suite Support">ServerSupport(G Suite Support)</option>
+                        <option value="HPC">ServerSupport(HPC)</option>
+                        <option value="Not Specified">ServerSupport(Not Specified)</option>
+                        <option value="ADS">ServerSupport(ADS)</option>
+                        <option value="Antivirus">ServerSupport(Antivirus)</option>
+                        <option value="Data Issue">ServerSupport(Data Issue)</option>
+                        <option value="DHCP ">ServerSupport(DHCP)</option>
+                         
+                
+                        <option value="IT Procurement(Software Licenses)">Application Support (Not Specified)
+                       </option>
+                        <option value="IT Procurement(Spares and Tools)">Application Support (Application monitoring)</option>
+                        <option value="IT Procurement(Standby)">Application Support (Certificate Requisition Portal (CRP))</option>
+                        <option value="IT Procurement(Not Specified)">Application Support (Career Portal)
+                        </option>
+                        <option value="IT Procurement(Consumable)">Application Support (E-Sanad)</option>
+                        <option value="IT Procurement(E Waste Disposal)">Application Support (Elibrary)
+                        </option>
+                        <option value="IT Procurement(Software Licenses)">Application Support (Emanager)</option>
+                        <option value="IT Procurement(Spares and Tools)">Application Support (Emanager-Tapal)
+                        </option>
+                        <option value="IT Procurement(Standby)">Application Support (Evarsity-Academic Module)
+                        </option>
+                        <option value="IT Procurement(Not Specified)">Application Support (Evarsity-Account Module)
+                        </option>
+                        <option value="IT Procurement(Consumable)">Application Support (Evarsity-Admissions Module)
+                        </option>
+                        <option value="IT Procurement(E Waste Disposal)">Application Support (Evarsity-AMS)
+                        </option>
+                        <option value="IT Procurement(Spares and Tools)">Application Support (Evarsity-ExaminationModule)
+
+                        </option>
+                        <option value="IT Procurement(Standby)">Application Support (Evarsity-Feekart portal)
+                        </option>
+                        <option value="IT Procurement(Not Specified)">Application Support (Evarsity-Hostel Module)
+                        </option>
+                        <option value="IT Procurement(Consumable)">Application Support (Evarsity-NetID API)
+
+                        </option>
+                        <option value="IT Procurement(E Waste Disposal)">Application Support (Evarsity-Payroll Module)
+                        </option>
+                        <option value="IT Procurement(Hardware - Desktop/Laptops/Printer)">IT Procurement(Hardware - Desktop/Laptops/Printer)</option>
+                        <option value="IT Procurement(Network-Active)">IT Procurement(Network-Active)</option>
+                        <option value="IT Procurement(Network-Passive)">IT Procurement(Network-Passive)</option>
+                        <option value="IT Procurement(Services - ISP Manpower,AMC/Warranty Support Services)">IT Procurement(Services - ISP Manpower,AMC/Warranty Support Services)</option>
+
+                      </select>
+                    </div><br>
+                  </div>
+                  
+                  
+                  <div class="ilg"><b>Description :</b><br></div>
+      
+                  <textarea  rows="6" cols="120" placeholder="Describe your Issue Briefly Here (120)" name="desp" id="desp"></textarea><br>
+                  <button type="submit">Submit</button><br>
+                  <small><a href="version.txt">&reg;version : 0201.22.1.b</a></small>
+                     <div class="dropdown-content">
+                    <p>Hello World!</p></div>
+                    </div>
+                  
+                </form>
+              </div>
+              <div class="panel-footer text-right">
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
